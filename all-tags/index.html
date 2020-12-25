@@ -11,7 +11,7 @@
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"http://example.com","author":{"@type":"Person","name":"Lee","sameAs":["https://github.com/"]},"name":"프로젝트 개발노트","description":null,"url":"http://example.com"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"http://example.com","author":{"@type":"Person","name":"Lee","sameAs":["https://github.com/"],"image":"Profile.jpg"},"name":"프로젝트 개발노트","description":null,"url":"http://example.com"}</script>
     <meta property="og:type" content="blog">
 <meta property="og:title" content="all-tags">
 <meta property="og:url" content="http://example.com/all-tags/index.html">
@@ -25,6 +25,8 @@
     
         
     
+    
+        <meta property="og:image" content="http://example.com/assets/images/Profile.jpg"/>
     
     
     
@@ -56,6 +58,10 @@
 
 
     
+        
+            
+        
+    
 
 <header id="header" data-behavior="2">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
@@ -77,6 +83,8 @@
             >
         
         
+            <img class="header-picture" src="/assets/images/Profile.jpg" alt="Author&#39;s picture"/>
+        
         </a>
     
 </header>
@@ -84,8 +92,26 @@
             <!-- Define author's picture -->
 
 
+
+        
+    
+
 <nav id="sidebar" data-behavior="2">
     <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a
+                    href="/#about"
+                    aria-label="Read more about the author"
+                >
+                    <img class="sidebar-profile-picture" src="/assets/images/Profile.jpg" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">Lee</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>기술 블로그</p>
+</h5>
+                
+            </div>
         
         
             <ul class="sidebar-buttons">
@@ -229,22 +255,28 @@
         
 
 
+    
+        
+    
+
 <div id="about">
     <div id="about-card">
         <div id="about-btn-close">
             <i class="fa fa-times"></i>
         </div>
         
+            <img id="about-card-picture" src="/assets/images/Profile.jpg" alt="Author&#39;s picture"/>
+        
             <h4 id="about-card-name">Lee</h4>
         
-            <div id="about-card-bio"><p>author.bio</p>
+            <div id="about-card-bio"><p>기술 블로그</p>
 </div>
         
         
             <div id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p>author.job</p>
+                <p>developer</p>
 
             </div>
         
